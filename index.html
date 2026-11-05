@@ -25,7 +25,7 @@ nav button:hover,nav button.active{background:#ffd91a;color:#111}.profile{border
 .play{width:100%;margin-top:17px;border:0;border-radius:13px;background:linear-gradient(#fff044,#ffbd00);padding:19px;color:#101322;font-size:29px;font-weight:1000;font-style:italic;cursor:pointer;box-shadow:0 5px 0 #a96a00}.play:hover{filter:brightness(1.1);transform:translateY(-2px)}
 .center{align-self:end;text-align:center;padding-bottom:18px}.avatar{width:min(260px,26vw);height:370px;margin:auto;position:relative;display:flex;align-items:center;justify-content:center}.avatar:before{content:"";position:absolute;bottom:0;width:260px;height:42px;border-radius:50%;background:#20caff;filter:blur(22px);opacity:.8}.person{position:relative;z-index:1;width:180px;height:325px;filter:drop-shadow(0 12px 12px #00152c)}
 /* Personaje original ADAM con camiseta azul estilo PSG */
-.adam-character{position:relative;z-index:1;width:220px;height:360px;display:block;filter:drop-shadow(0 12px 12px #00152c)}
+.adam-character{position:relative;z-index:1;width:240px;height:370px;display:block;filter:drop-shadow(0 12px 12px #00152c)}
 .doll-head{position:absolute;top:5px;left:59px;width:62px;height:72px;border-radius:46% 46% 44% 44%;background:linear-gradient(90deg,#a85f3e,#e3a078 48%,#b96b49);z-index:4;border:2px solid #78432f}
 .doll-hair{position:absolute;top:0;left:57px;width:66px;height:30px;border-radius:55% 55% 25% 25%;background:#17151a;z-index:5;box-shadow:inset 0 -5px #30242a}
 .doll-hair:after{content:"";position:absolute;right:3px;top:14px;width:18px;height:19px;background:#17151a;border-radius:0 0 80% 20%;transform:rotate(-18deg)}
@@ -59,20 +59,34 @@ nav button:hover,nav button.active{background:#ffd91a;color:#111}.profile{border
 </nav>
 <main class="content">
  <section class="left"><div class="eyebrow">TU ISLA. TUS REGLAS.</div><div class="headline">ADAM<br><span style="color:#d18aff">ROYALE</span></div><div class="panel"><h2>⚔ BATALLA REAL</h2><div class="muted">Modo principal · objetivo: hasta 100 jugadores</div><button class="play" onclick="notify('¡El menú está listo! El modo de juego 3D se añadirá en el siguiente paso.')">▶ JUGAR</button></div></section>
- <section class="center"><div class="player">👑 AdamRoyale · EN LÍNEA</div><div class="avatar"><svg class="adam-character" viewBox="0 0 220 360" role="img" aria-label="Personaje Adam con camiseta azul del PSG y su nombre en la espalda" xmlns="http://www.w3.org/2000/svg">
-<defs><linearGradient id="skin" x2="1"><stop stop-color="#9d563b"/><stop offset=".5" stop-color="#e2a078"/><stop offset="1" stop-color="#a85d40"/></linearGradient><linearGradient id="blue" x2="1"><stop stop-color="#061943"/><stop offset=".5" stop-color="#17417e"/><stop offset="1" stop-color="#061943"/></linearGradient></defs>
-<ellipse cx="110" cy="343" rx="83" ry="12" fill="#28d7ff" opacity=".65"/>
-<!-- piernas y botas --><path d="M75 238 L70 310 Q68 324 82 326 L99 326 L106 246Z M121 246 L125 310 Q126 326 141 326 L155 324 L145 238Z" fill="url(#skin)" stroke="#713f31" stroke-width="2"/>
-<path d="M69 301 L101 301 L101 326 L68 326Z M124 301 L155 301 L157 326 L126 326Z" fill="#fff"/><path d="M68 318 L103 318 L105 340 Q104 349 91 349 L53 349 Q48 343 58 335Z M124 318 L157 318 L166 336 Q170 348 155 349 L119 349Z" fill="#11182c" stroke="#fff" stroke-width="3"/>
-<!-- brazos --><path d="M62 116 Q43 124 38 155 L27 213 Q25 226 38 230 Q51 232 55 218 L77 157Z M158 116 Q177 124 182 155 L193 213 Q195 226 182 230 Q169 232 165 218 L143 157Z" fill="url(#skin)" stroke="#78462f" stroke-width="3"/>
-<!-- cuello y cabeza --><path d="M94 79 L126 79 L129 112 L91 112Z" fill="url(#skin)"/><path d="M76 27 Q78 4 110 4 Q143 4 145 34 L140 77 Q133 101 110 102 Q86 100 79 77Z" fill="url(#skin)" stroke="#78462f" stroke-width="3"/>
-<path d="M75 43 Q70 9 104 4 Q139 -1 147 28 L140 43 Q124 29 105 29 Q91 29 76 48Z" fill="#17151b"/><path d="M78 28 Q95 13 115 19 L145 30 L140 45 Q116 31 81 49Z" fill="#242027"/>
-<ellipse cx="96" cy="58" rx="4" ry="3" fill="#201719"/><ellipse cx="125" cy="58" rx="4" ry="3" fill="#201719"/><path d="M101 78 Q110 84 120 78" fill="none" stroke="#713b32" stroke-width="3" stroke-linecap="round"/>
-<!-- camiseta azul PSG --><path d="M79 101 L94 91 L110 105 L126 91 L142 101 L164 124 L149 148 L139 139 L144 238 Q110 251 76 238 L81 139 L71 148 L56 124Z" fill="url(#blue)" stroke="#d8edff" stroke-width="4"/>
-<path d="M102 98 L110 105 L118 98 L124 238 L96 238Z" fill="#e33150"/><path d="M109 105 L113 105 L116 238 L110 238Z" fill="#fff"/>
-<path d="M88 164 L132 164" stroke="#d7eaff" stroke-width="2" opacity=".7"/><text x="110" y="185" text-anchor="middle" font-size="19" font-weight="900" fill="#fff">PSG</text><text x="110" y="211" text-anchor="middle" font-size="13" font-weight="900" letter-spacing="1" fill="#fff">ADAM</text>
-<!-- pantalón --><path d="M76 233 Q110 242 144 233 L148 278 L116 281 L110 263 L103 281 L72 278Z" fill="#111b38" stroke="#d8edff" stroke-width="3"/>
-<path d="M75 276 L104 276 L100 306 L69 306Z M116 276 L146 276 L151 306 L120 306Z" fill="#fff"/><path d="M69 280 L101 280 M120 280 L149 280" stroke="#e33150" stroke-width="5"/>
+ <section class="center"><div class="player">👑 AdamRoyale · EN LÍNEA</div><div class="avatar"><svg class="adam-character banana-character" viewBox="0 0 240 370" role="img" aria-label="Mascota banana amarilla de ADAM ROYALE" xmlns="http://www.w3.org/2000/svg">
+<defs>
+ <linearGradient id="bananaSkin" x1="0" y1="0" x2="1" y2=".2"><stop stop-color="#d99b00"/><stop offset=".28" stop-color="#ffe52b"/><stop offset=".62" stop-color="#fff45a"/><stop offset="1" stop-color="#dca600"/></linearGradient>
+ <linearGradient id="bananaSide" x2="1"><stop stop-color="#e6aa00"/><stop offset=".5" stop-color="#fff04a"/><stop offset="1" stop-color="#c88700"/></linearGradient>
+ <linearGradient id="glove" x2="1"><stop stop-color="#d99b00"/><stop offset=".5" stop-color="#ffe45b"/><stop offset="1" stop-color="#b97800"/></linearGradient>
+</defs>
+<ellipse cx="120" cy="352" rx="80" ry="13" fill="#28d7ff" opacity=".5"/>
+<!-- banana body -->
+<path d="M113 32 Q90 22 91 7 Q105 15 119 7 Q137 -1 150 15 Q159 25 153 43 Q174 71 177 119 Q185 190 157 263 Q143 301 111 307 Q73 312 55 277 Q34 237 49 176 Q62 119 82 78 Q94 52 113 32Z" fill="url(#bananaSkin)" stroke="#b77c00" stroke-width="4"/>
+<path d="M116 36 Q91 83 81 143 Q65 214 83 270 Q95 300 117 303 Q80 314 57 279 Q34 238 49 176 Q62 119 82 78 Q96 50 116 36Z" fill="#e6b300" opacity=".55"/>
+<path d="M120 34 Q139 72 146 126 Q157 208 132 284" fill="none" stroke="#fffaa0" stroke-width="9" opacity=".55" stroke-linecap="round"/>
+<path d="M113 30 Q106 19 111 8 Q121 17 130 8 Q141 1 149 13 Q157 27 145 40" fill="#79502a" stroke="#4f351e" stroke-width="4"/>
+<!-- eyes and smile -->
+<ellipse cx="91" cy="151" rx="13" ry="19" fill="#fff"/><ellipse cx="143" cy="147" rx="13" ry="19" fill="#fff"/>
+<ellipse cx="94" cy="154" rx="6" ry="10" fill="#241b18"/><ellipse cx="140" cy="150" rx="6" ry="10" fill="#241b18"/>
+<circle cx="96" cy="149" r="2.5" fill="#fff"/><circle cx="142" cy="145" r="2.5" fill="#fff"/>
+<path d="M105 184 Q119 199 136 182" fill="none" stroke="#71351e" stroke-width="5" stroke-linecap="round"/>
+<path d="M110 188 Q120 194 132 187" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+<!-- arms raised and waving -->
+<path d="M55 174 Q37 166 31 143 L24 116 Q21 105 30 101 Q39 98 44 109 L56 137 L73 153Z" fill="url(#glove)" stroke="#a66e00" stroke-width="3"/>
+<path d="M25 113 Q13 103 11 89 Q10 80 17 78 Q24 77 27 88 L30 98 Q28 83 35 82 Q43 82 41 96 L39 107 Q46 96 52 101 Q57 108 48 118 L40 130Z" fill="#ffe65a" stroke="#a66e00" stroke-width="3"/>
+<path d="M166 174 Q187 163 194 139 L204 111 Q208 100 218 105 Q226 110 219 123 L207 157 Q199 181 178 195Z" fill="url(#glove)" stroke="#a66e00" stroke-width="3"/>
+<!-- shorts and legs -->
+<path d="M67 276 Q117 294 160 266 L151 309 Q119 328 82 313Z" fill="#16264c" stroke="#f5d83c" stroke-width="4"/>
+<path d="M91 310 L88 337 Q86 347 99 349 L112 349 L117 316Z M133 310 L136 337 Q138 348 151 346 L161 342 L153 303Z" fill="url(#bananaSide)" stroke="#a66e00" stroke-width="3"/>
+<path d="M83 339 Q101 333 117 342 L119 354 L78 356 Q69 352 83 339Z M136 339 Q153 332 167 340 L176 352 Q176 359 164 359 L132 357Z" fill="#17213a" stroke="#fff" stroke-width="3"/>
+<path d="M85 346 L113 346 M141 346 L168 346" stroke="#ffd92d" stroke-width="4"/>
+<text x="120" y="249" text-anchor="middle" font-size="12" font-weight="1000" letter-spacing="1.5" fill="#6b4a00">ADAM</text>
 </svg></div><div class="muted">ADAM · CAMISETA PSG</div></section>
  <section class="right"><button class="tile" onclick="notify('La tienda de skins llegará próximamente.')"><strong>👕 TIENDA DE SKINS</strong><span>Descubre nuevos aspectos</span></button><button class="tile" onclick="notify('El mapa 3D está en desarrollo.')"><strong>🌍 EXPLORA EL MAPA</strong><span>Descubre todos los lugares</span></button><button class="tile" onclick="notify('El modo construcción está en desarrollo.')"><strong>🧱 CONSTRUYE</strong><span>Crea tus propias estructuras</span></button></section>
 </main>
